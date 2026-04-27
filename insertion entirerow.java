@@ -17,6 +17,8 @@ public class assignment
 	String population = scn.nextLine();
 	System.out.println("enter Currency");
 	String currency = scn.nextLine();
+
+		
 	try
 	{
 	Class.forName("com.mysql.cj.jdbc.Driver");
