@@ -32,6 +32,8 @@ public class Insert {
             stmt.close();
         } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
+
+            
         }
     }
 }
