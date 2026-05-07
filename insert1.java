@@ -6,14 +6,17 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Scanner;
 public class rodata 
+	
 {
 public static void main(String [] args)
 {
+	
 	Scanner scn = new Scanner(System.in);
 	System.out.println("enter id");
 	int id = scn.nextInt();
 	try
 	{
+		
 		Class.forName("com.mysql.cj.jdbc.Driver");
 		System.out.println("loading completed!");
 		String dburl = ("jdbc:mysql://localhost:3306/dmart?user=root&password=Murali@6492");
@@ -53,6 +56,7 @@ public static void main(String [] args)
 		scn.close();
 		
 	}
+		
 	catch(SQLException | ClassNotFoundException e)
 	{
 		e.printStackTrace();
@@ -60,3 +64,16 @@ public static void main(String [] args)
 
 }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
