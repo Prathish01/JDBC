@@ -18,6 +18,8 @@ public class Update {
             String query = "UPDATE country SET country_population='110 cr' WHERE country_code=2";
             Statement stmt = con.createStatement();
             int affected = stmt.executeUpdate(query);
+
+            
             if(affected >0){
                 System.out.println("Updated successfully");
             }else {
