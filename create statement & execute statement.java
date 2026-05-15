@@ -9,10 +9,12 @@ iv. factory method to create statement: createStatement() method
 v. helper method to execute query: executeUpdate(String query) method
 * */
 
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
+
 
 public class Insert {
     public static void main(String[] args) {
@@ -40,6 +42,9 @@ public class Insert {
             stmt.close();
         } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
+            
         }
+        
     }
+    
 }
