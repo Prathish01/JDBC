@@ -9,8 +9,10 @@ public class assignment
 	System.out.println("enter ID");
 	int id = scn.nextInt();
 	scn.nextLine();
+		
 	System.out.println("enter Name");
 	String name = scn.nextLine();
+		
 	System.out.println("enter Capital");
 	String capital = scn.nextLine();
 	System.out.println("enter Population");
