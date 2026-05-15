@@ -10,12 +10,14 @@ public class rodata
 {
 public static void main(String [] args)
 {
+
 	
 	Scanner scn = new Scanner(System.in);
 	System.out.println("enter id");
 	int id = scn.nextInt();
 	try
 	{
+		
 		
 		Class.forName("com.mysql.cj.jdbc.Driver");
 		System.out.println("loading completed!");
@@ -26,6 +28,7 @@ public static void main(String [] args)
 			System.out.println("connection created");
 		}
 		else
+			
 		{
 			System.out.println("connection not successfull");
 		}
@@ -47,6 +50,7 @@ public static void main(String [] args)
 			System.out.println(id1 +"\t" + name + "\t" + quantity + "\t" + price + "\t" + doe);
 		}
 		else
+			
 		{
 			System.out.println("try again");
 		}
