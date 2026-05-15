@@ -15,9 +15,6 @@ public static void main(String [] args)
 	System.out.println("enter id to update");
 	int id = scn.nextInt();
 	
-
-
-	
 	try
 	{
 		
@@ -39,14 +36,19 @@ FileInputStream fis1 = new FileInputStream("C:\\Users\\mural\\OneDrive\\Desktop\
 psmt.setBinaryStream(1, fis1);
 int op = psmt.executeUpdate();
 if(op>0)
+	
 {
+	
 System.out.println("operation done");	
+	
 }
 else
 {
+	
 	System.out.println("check the query");}
 
 
+		
 	}
 
 	catch(ClassNotFoundException | SQLException | FileNotFoundException e)
