@@ -10,8 +10,11 @@ public class Loading_Drivers {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             System.out.println("Loading Driver completed!");
+
+            
             String dburl = "jdbc:mysql://localhost:3306/add_m12";
             String userName = "username";
+            
             String password = "1610";
             Connection con = DriverManager.getConnection(dburl,userName,password);
             if (con != null) {
