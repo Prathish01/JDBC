@@ -1,7 +1,5 @@
 package connection;
 
-
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -23,11 +21,13 @@ if(con != null)
 System.out.println("connection successfull");	
 }
 else
+	
 {
 System.out.println("connection unsuccessfull");	
 }
 
 String query = "SELECT NAME FROM STORE ORDER BY PRICE";
+		
 Statement st = 	con.createStatement();
 ResultSet rs = st.executeQuery(query);
 while(rs.next())
@@ -44,6 +44,7 @@ System.out.println(name);
 	}
 }
 }
+
 
 
 
